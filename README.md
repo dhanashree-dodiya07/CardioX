@@ -1,0 +1,1 @@
+This project is developed using the Random Forest Classifier, a powerful machine learning algorithm that combines multiple decision trees to deliver accurate and reliable predictions. By analyzing various health parameters, the model predicts heart-related risks with improved precision and reduced overfitting.
