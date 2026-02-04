@@ -43,7 +43,7 @@ interface PredictionResult {
 }
 
 export default function Predict() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL+'predict' || 'http://localhost:5000';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
   const [formData, setFormData] = useState<FormData>({
     age: '',
     gender: '',
