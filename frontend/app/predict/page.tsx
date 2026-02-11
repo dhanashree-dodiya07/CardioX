@@ -43,7 +43,7 @@ interface PredictionResult {
 }
 
 export default function Predict() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL + 'predict' || 'http://localhost:5000';
+  const API_URL = "https://machinelearningproject-c516.onrender.com/predict";
   const [formData, setFormData] = useState<FormData>({
     age: '',
     gender: '',
@@ -115,7 +115,7 @@ export default function Predict() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${API_URL}/predict`, {
+      const response = await fetch("https://machinelearningproject-c516.onrender.com/predict", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
